@@ -1,0 +1,128 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+        <title>Me</title>
+
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div class="container">
+              <img src="images/6.jpg" alt="Snow" style="width:100%;">
+              <div class="bottom-left"></div>
+              <div class="top-left"><p>ORIGINALLY from NEPAL</p></div>
+              <div class="top-right"><p>Senior with a Information Technology Major</p><p>Graphic Design Minor</p></div>
+              <div class="bottom-right">CALM and MOTIVATED PERSON</div>
+              <div class="centered"><img src="images/assignment3.jpg" alt="name"/></div>
+            </div>
+                
+
+
+            
+           
+
+        <div class="main">
+            <p>This is my last semester so I am a little nervous about going into the real work life.</p>
+            <p>I'm a person with a simple life that goes with the current right now. In my free time, I like to paint, illustrate, compose songs, edit, travel, photograph, and sleep</p>
+            <p> I grew up with my parents and my siblings back in my country. I have always been a calm and a motivate person. 
+          </p>
+      </div>
+            
+            
+
+            <div class ="hobby">
+            <div class="main1">
+                    <div class= "moving">
+                        <marquee width="400px" direction="side" height="100px">
+                            <p> HOBBY</p>
+                        </marquee>
+    </div>
+            <div class="column3">
+                <p>I am all over the place as for the hobbies.I like to paint although I am not good at it. I like to sing though my voice cracks all the time. I like to go on evening walk especially when there is a light rain.</p>
+               <p> I am always ready to go for hiking and long rides  are the best. I like photography especially landescape.
+                </p>
+            </div>
+            <div class="column4">
+            <div class="slideshow">
+
+              <img class="mySlides" src="images/10.jpg">
+              <img class="mySlides" src="images/2.jpg" >
+              <img class="mySlides" src="images/3.jpg" >
+                <img class="mySlides" src="images/9.jpg" >
+            </div>
+            </div>
+            </div>
+            </div>
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
+     <div class ="design">
+            <div class="main1">
+                    <div class= "moving">
+                        <marquee width="400px" direction="side" height="100px">
+                            <p>DESIGN</p>
+                        </marquee>
+    </div>
+            
+        <div class="grid-container">
+          <div> <video width="420" height="auto" controls autoplay>
+                      <source src="images/picnicfun.mp4" type="video/mp4">
+              <source src="images/picnicfun.mp4" type="video/ogg"></video><p><a href="https://vimeo.com/user122165938">Animations</a></p> </div>
+          <div> <img src="images/9.jpg" alt="Snow" style="width:400px;"><p>HIKING</p></div>
+          <div><img src="images/tea.gif" alt="Snow" style="width:400px;"><p>TEA GIF</p></div>  
+
+
+        </div>
+         </div>
+            </div>
+            
+         <div class ="contact">
+            <div class="main1">
+                    <div class= "moving1">
+                        <marquee width="400px" direction="side" height="100px">
+                            <p>CONTACT</p>
+                        </marquee>
+                </div>
+                <div class="container">
+  
+  </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+             
+
+
+        
+    </body>
+</html>

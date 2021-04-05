@@ -1,0 +1,224 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after,{
+    box-sizing: inherit;
+}
+
+
+body{
+    background-color: lavenderblush;
+    font-family: courier,arial,helvetica;
+}
+
+
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.container img{
+    opacity: 50%;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 100px;
+  left: 90px;
+
+}
+
+.top-left p{
+    font-size: 20px;
+    color: black;
+    background-color: azure;
+}
+
+.top-right {
+  position: absolute;
+  top: 100px;
+  right: 90px;
+
+}
+
+.top-right p{
+    font-size: 20px;
+    color: black;
+    background-color: azure;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 100px;
+  right: 16px;
+}
+.bottom-right{
+    font-size:80px;
+    color: black;
+    background-color: azure;
+   
+}
+
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered img{
+    width: 300px;
+    height: auto;
+    opacity: 100%;
+}
+
+
+.main{
+    
+    height: 300px;
+    width:50%;
+    margin-left: 20px;
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align: center;
+     background-color: azure;
+}
+
+.main p{
+    font-size:20px;
+    color: black;
+   
+}
+
+.column3{
+   float: left;
+  width:30%;
+  height: 500px;
+    text-align: center;
+      position: relative;
+    padding-top: 80px;
+    padding-left: 80px;
+    
+
+
+}
+
+.column4 {
+    float: right;
+    width: 50%;
+    height: 500px;
+    padding-left: 159px;
+
+
+
+
+}
+.column4 img{
+    width:550px;
+    height:auto;
+    border: 10px solid black;
+   
+
+}
+.main1{
+    
+    height: 500px;
+    width:100%;
+    padding-top: 10px;
+    padding-left: 20px;
+        
+}
+
+.moving p{
+    font-size: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.moving1{
+    padding-top: 300px;
+    font-size: 30px;
+    
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+ 
+
+
+
